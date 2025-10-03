@@ -5,33 +5,33 @@ import AllMenus from "./Menu";
 
 const Home = () => {
   const navigate = useNavigate();
-  
+
   // State for the first image slider
   const [currentSlide1, setCurrentSlide1] = useState(0);
   const slides1 = [
-    "src/assets/imagelocal/image1.jpg",
-    "src/assets/imagelocal/image2.jpg",
-    " src/assets/imagelocal/image3.jpg",
-    "src/assets/imagelocal/image4.jpg",
-    "src/assets/imagelocal/image5.jpg",
-    "src/assets/imagelocal/image6.jpg",
+    "/imagelocal/image1.jpg",
+    "/imagelocal/image2.jpg",
+    "/imagelocal/image3.jpg",
+    "/imagelocal/image4.jpg",
+    "/imagelocal/image5.jpg",
+    "/imagelocal/image6.jpg",
   ];
 
   // State for the second image slider
   const [currentSlide2, setCurrentSlide2] = useState(0);
   const slides2 = [
-    "src/assets/imagefood/image1.jpg",
-    "src/assets/imagefood/image2.jpg",
-    "src/assets/imagefood/image3.jpg",
-    "src/assets/imagefood/image4.jpg",
-    "src/assets/imagefood/image5.jpg",
-    "src/assets/imagefood/image6.jpg",
-    "src/assets/imagefood/image7.jpg",
-    "src/assets/imagefood/image8.jpg",
-    "src/assets/imagefood/image9.jpg",
-    "src/assets/imagefood/image10.jpg",
-    "src/assets/imagefood/image11.jpg",
-    "src/assets/imagefood/image12.jpg",
+    "/imagefood/image1.jpg",
+    "/imagefood/image2.jpg",
+    "/imagefood/image3.jpg",
+    "/imagefood/image4.jpg",
+    "/imagefood/image5.jpg",
+    "/imagefood/image6.jpg",
+    "/imagefood/image7.jpg",
+    "/imagefood/image8.jpg",
+    "/imagefood/image9.jpg",
+    "/imagefood/image10.jpg",
+    "/imagefood/image11.jpg",
+    "/imagefood/image12.jpg",
   ];
 
   // Auto-slide functionality for both sliders
@@ -206,7 +206,7 @@ const Home = () => {
               <div className="absolute bottom-0 right-0 w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full animate-bounce"></div>
               <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-br from-blue-400 to-green-400 rounded-full animate-ping"></div>
             </div>
-            
+
             <div className="relative z-10">
               <div className="flex items-center justify-center mb-4">
                 <Sparkles className="w-8 h-8 text-yellow-300 mr-2 animate-spin" />
@@ -215,37 +215,44 @@ const Home = () => {
                 </h2>
                 <Sparkles className="w-8 h-8 text-yellow-300 ml-2 animate-spin" />
               </div>
-              
+
               <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-                Vivez une expérience culinaire exceptionnelle dans notre restaurant. 
-                Réservez dès maintenant pour garantir votre place !
+                Vivez une expérience culinaire exceptionnelle dans notre
+                restaurant. Réservez dès maintenant pour garantir votre place !
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <button
-                  onClick={() => navigate('/reservations')}
+                  onClick={() => navigate("/reservations")}
                   className="group relative px-8 py-4 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 text-[#872E1E] font-bold text-lg rounded-full shadow-lg transform transition-all duration-300 hover:scale-110 hover:shadow-2xl focus:outline-none focus:ring-4 focus:ring-yellow-300 animate-pulse hover:animate-none overflow-hidden"
                 >
                   <span className="absolute inset-0 bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></span>
                   <span className="relative flex items-center">
                     <Calendar className="w-6 h-6 mr-2 group-hover:rotate-12 transition-transform duration-300" />
                     Réserver Maintenant
-                    <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    <span className="ml-2 group-hover:translate-x-1 transition-transform duration-300">
+                      →
+                    </span>
                   </span>
                 </button>
-                
+
                 <div className="flex items-center text-white/80">
                   <Phone className="w-5 h-5 mr-2 animate-bounce" />
                   <span className="text-sm">ou appelez: +33 7 52 08 14 49</span>
                 </div>
               </div>
             </div>
-            
+
             {/* Floating animation elements */}
             <style jsx>{`
               @keyframes float {
-                0%, 100% { transform: translateY(0px); }
-                50% { transform: translateY(-10px); }
+                0%,
+                100% {
+                  transform: translateY(0px);
+                }
+                50% {
+                  transform: translateY(-10px);
+                }
               }
               .animate-float {
                 animation: float 3s ease-in-out infinite;
