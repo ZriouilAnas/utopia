@@ -112,7 +112,7 @@ export default function Navbar({ bgImage }) {
                   <Instagram className="w-7 h-7 text-white" />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/p/Le-Restaurant-dUtopia-Borderouge-61550992137450/"
                   className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition"
                   aria-label="Facebook"
                 >
