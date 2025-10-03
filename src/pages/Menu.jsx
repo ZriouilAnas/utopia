@@ -13,7 +13,7 @@ const AllMenus = () => {
       subtitle: "Morning Delights",
       time: "12:00 - 14:00",
       description:
-        "manger les burgers yammy yammy manger le s pizzas yammyyammy hello HAHAH",
+        "Une mise en bouche délicate, comme l'ouverture d'un rideau rouge. L'éveil des papilles dans une scène où chaque saveur murmure sa réplique.",
       image: "/imagefood/image8.jpg",
       color: "from-orange-400 to-amber-500",
       icon: "☀️",
@@ -25,7 +25,7 @@ const AllMenus = () => {
       subtitle: "Midday Indulgence",
       time: "14:00 - 18:00",
       description:
-        "Mélange parfait du petit déjeuner et du déjeuner avec des cocktails, des salades.",
+        "Le café fumant dialogue avec les jus pressés. Les œufs, les fromages, les pains encore tièdes composent une symphonie, où chaque bouchée devient une réplique savoureuse.",
       image: "/imagefood/image10.jpg",
       color: "from-emerald-400 to-teal-500",
       icon: "🧇🥐☕",
@@ -37,7 +37,7 @@ const AllMenus = () => {
       subtitle: "Evening Excellence",
       time: "18:45 - 21:00",
       description:
-        "Notre menu de dîner sélectionné par le chef, nos vins fins et nos desserts.",
+        "Sous la lumière douce, chaque plat se dévoile. Amuse-bouches, plats principaux et dessert se suivent comme un petit spectacle. Chaque saveur raconte une histoire, chaque bouchée crée un moment.",
       image: "/imagefood/image13.jpg",
       color: "from-purple-500 to-indigo-600",
       icon: "🍽️🥂🍝👩🏻‍🍳",

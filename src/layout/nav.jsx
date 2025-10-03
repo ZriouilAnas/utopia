@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Instagram, Phone, Facebook } from "lucide-react";
-import Logo from '../assets/imagelocal/logo.png';
+import Logo from "../assets/imagelocal/logo.png";
 
 export default function Navbar({ bgImage }) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -29,49 +29,67 @@ export default function Navbar({ bgImage }) {
           <div className="flex items-center justify-between h-32">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3">
-              <img src={Logo} alt="Logo" className="w-50 h-50 m-2 p-2 object-contain" />
+              <img
+                src={Logo}
+                alt="Logo"
+                className="w-50 h-50 m-2 p-2 object-contain"
+              />
             </Link>
 
             {/* Desktop links */}
             <div className="hidden md:flex md:items-center md:gap-6">
-                <Link
-                  to="/"
-                  className="text-[1rem] md:text-[1.2rem] text-white/90 hover:text-amber-400 font-semibold px-3 py-1 rounded transition"
-                >
-                  Home
-                </Link>
-                <Link
-                  to="/menu"
-                  className="text-[1rem] md:text-[1.2rem] text-white/80 hover:text-amber-400 font-semibold px-3 py-1 rounded transition"
-                >
-                  Menu
-                </Link>
-                <div className="relative group">
-                  <button className="inline-flex items-center px-3 py-1 bg-white border border-amber-400 font-bold text-amber-700 text-base tracking-wide shadow-md focus:outline-none gap-1">
-                    <span className="text-[1rem] md:text-[1.2rem]">Menus du jour</span>
-                    <svg className="w-4 h-4 text-amber-700 ml-1" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
-                  </button>
-                  <div className="absolute left-0 mt-2 min-w-[11.5rem] bg-white border border-amber-200 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-50">
-                    <Link
-                      to="/jour"
-                      className="text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold rounded-t"
-                    >
-                      Jour
-                    </Link>
-                    <Link
-                      to="/brunch"
-                      className="text-[1rem] md:text-[1.2rem] text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold"
-                    >
-                      Brunch
-                    </Link>
-                    <Link
-                      to="/soir"
-                      className="text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold rounded-b"
-                    >
-                      Soir
-                    </Link>
-                  </div>
+              <Link
+                to="/"
+                className="text-[1rem] md:text-[1.2rem] text-white/90 hover:text-amber-400 font-semibold px-3 py-1 rounded transition"
+              >
+                Accueil
+              </Link>
+              <Link
+                to="/menu"
+                className="text-[1rem] md:text-[1.2rem] text-white/80 hover:text-amber-400 font-semibold px-3 py-1 rounded transition"
+              >
+                Menu
+              </Link>
+              <div className="relative group">
+                <button className="inline-flex items-center px-3 py-1 bg-white border border-amber-400 font-bold text-amber-700 text-base tracking-wide shadow-md focus:outline-none gap-1">
+                  <span className="text-[1rem] md:text-[1.2rem]">
+                    Menus du jour
+                  </span>
+                  <svg
+                    className="w-4 h-4 text-amber-700 ml-1"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+                <div className="absolute left-0 mt-2 min-w-[11.5rem] bg-white border border-amber-200 opacity-0 group-hover:opacity-100 group-focus-within:opacity-100 transition-opacity z-50">
+                  <Link
+                    to="/jour"
+                    className="text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold rounded-t"
+                  >
+                    Jour
+                  </Link>
+                  <Link
+                    to="/brunch"
+                    className="text-[1rem] md:text-[1.2rem] text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold"
+                  >
+                    Brunch
+                  </Link>
+                  <Link
+                    to="/soir"
+                    className="text-[1rem] md:text-[1.2rem] block px-4 py-2 text-amber-700 hover:bg-amber-100 font-semibold rounded-b"
+                  >
+                    Soir
+                  </Link>
                 </div>
+              </div>
             </div>
 
             {/* Right actions */}
@@ -79,17 +97,25 @@ export default function Navbar({ bgImage }) {
               <Link
                 to="/reservations"
                 className="hidden md:inline-flex items-center px-5 py-2 mr-4 text-base font-bold bg-gradient-to-r from-rose-500 via-amber-400 to-rose-500 text-white shadow-xlhover:scale-105 transition-all border-2 border-white/30"
-                style={{letterSpacing: '0.03em'}}
+                style={{ letterSpacing: "0.03em" }}
               >
                 <span className="mr-2">Contact & Réservations</span>
                 <span className="tracking-widest">+33 7 52 08 14 49</span>
               </Link>
 
               <div className="hidden md:flex items-center gap-2">
-                <a href="#" className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition" aria-label="Instagram">
-                <Instagram className="w-7 h-7 text-white" />
+                <a
+                  href="#"
+                  className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-7 h-7 text-white" />
                 </a>
-                <a href="#" className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition" aria-label="Facebook">
+                <a
+                  href="#"
+                  className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition"
+                  aria-label="Facebook"
+                >
                   <Facebook className="w-7 h-7 text-white" />
                 </a>
               </div>
@@ -123,19 +149,39 @@ export default function Navbar({ bgImage }) {
               </button>
             </div>
             <div className="flex-1 flex flex-col justify-center items-center gap-6">
-              <Link to="/" className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/"
+                className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center"
+                onClick={() => setMobileOpen(false)}
+              >
                 Home
               </Link>
-              <Link to="/menu" className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/menu"
+                className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center"
+                onClick={() => setMobileOpen(false)}
+              >
                 Nos Menus
               </Link>
-              <Link to="/jour" className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/jour"
+                className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center"
+                onClick={() => setMobileOpen(false)}
+              >
                 Menu Jour
               </Link>
-              <Link to="/brunch" className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/brunch"
+                className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center"
+                onClick={() => setMobileOpen(false)}
+              >
                 Menu Brunch
               </Link>
-              <Link to="/soir" className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center" onClick={() => setMobileOpen(false)}>
+              <Link
+                to="/soir"
+                className="text-white text-2xl font-bold py-2 px-6  hover:bg-amber-400 hover:text-[#872E1E] transition w-full text-center"
+                onClick={() => setMobileOpen(false)}
+              >
                 Menu Soir
               </Link>
               <Link
@@ -147,10 +193,18 @@ export default function Navbar({ bgImage }) {
               </Link>
             </div>
             <div className="flex justify-center gap-6 pb-8">
-              <a href="#" className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition" aria-label="Instagram">
+              <a
+                href="#"
+                className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition"
+                aria-label="Instagram"
+              >
                 <Instagram className="w-7 h-7 text-white" />
               </a>
-              <a href="#" className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition" aria-label="Facebook">
+              <a
+                href="#"
+                className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition"
+                aria-label="Facebook"
+              >
                 <Facebook className="w-7 h-7 text-white" />
               </a>
             </div>
