@@ -14,7 +14,7 @@ const AllMenus = () => {
       time: "12:00 - 14:00",
       description:
         "manger les burgers yammy yammy manger le s pizzas yammyyammy hello HAHAH",
-      image: "src/assets/imagefood/image8.jpg",
+      image: "/imagefood/image8.jpg",
       color: "from-orange-400 to-amber-500",
       icon: "☀️",
       pdfUrl: "../assets/pdfmenus/pour-menu-jour.pdf",
@@ -26,7 +26,7 @@ const AllMenus = () => {
       time: "14:00 - 18:00",
       description:
         "Mélange parfait du petit déjeuner et du déjeuner avec des cocktails, des salades.",
-      image: "src/assets/imagefood/image10.jpg",
+      image: "/imagefood/image10.jpg",
       color: "from-emerald-400 to-teal-500",
       icon: "🧇🥐☕",
       pdfUrl: "../assets/pdfmenus/pour-menu-brunch.pdf",
@@ -38,7 +38,7 @@ const AllMenus = () => {
       time: "18:45 - 21:00",
       description:
         "Notre menu de dîner sélectionné par le chef, nos vins fins et nos desserts.",
-      image: "src/assets/imagefood/image13.jpg",
+      image: "/imagefood/image13.jpg",
       color: "from-purple-500 to-indigo-600",
       icon: "🍽️🥂🍝👩🏻‍🍳",
       pdfUrl: "../assets/pdfmenus/pour-menu-soir.pdf",
