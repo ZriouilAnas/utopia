@@ -105,7 +105,7 @@ export default function Navbar({ bgImage }) {
 
               <div className="hidden md:flex items-center gap-2">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/restoutopiaborderouge/"
                   className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition"
                   aria-label="Instagram"
                 >
@@ -194,14 +194,14 @@ export default function Navbar({ bgImage }) {
             </div>
             <div className="flex justify-center gap-6 pb-8">
               <a
-                href="#"
+                href="https://www.instagram.com/restoutopiaborderouge/"
                 className="p-3 rounded-full bg-white/20 hover:bg-rose-500 transition"
                 aria-label="Instagram"
               >
                 <Instagram className="w-7 h-7 text-white" />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/p/Le-Restaurant-dUtopia-Borderouge-61550992137450/"
                 className="p-3 rounded-full bg-white/20 hover:bg-blue-600 transition"
                 aria-label="Facebook"
               >
